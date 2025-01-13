@@ -1,6 +1,11 @@
 # Sign-Language Subtitles for Sports Commentary
 
-An innovative platform designed to improve accessibility by translating sports commentary into synchronized sign-language animations, enabling the Deaf and Hard-of-Hearing community to enjoy sports content inclusively.
+Project designed to improve accessibility by translating sports commentary into synchronized sign-language animations, enabling the Deaf and Hard-of-Hearing community to enjoy sports commentary filled with intensity and emotions for the sports.
+
+![image](https://github.com/user-attachments/assets/dd45e056-cc09-4d0b-9029-36b92d9c86a6)
+
+
+
 
 ## Table of Contents
 
@@ -26,7 +31,7 @@ An innovative platform designed to improve accessibility by translating sports c
 - **AI-Based Normalization**: Utilizes Modus AI for context-aware transcription normalization
 - **Metadata Retrieval**: Dgraph-powered knowledge graph for animation and metadata storage
 - **Subtitle Track Generation**: JSON-based subtitle tracks with timing and animation data
-- **Video Overlay**: C++ library for embedding sign-language animations
+- **Video Overlay**: C++ library I built for putting sign language overlays on videos along with effects. [Link to the repo](https://github.com/sarthak7awasthi/Sign-Language-Subtitles)
 - **Processed Video Delivery**: Final video output with synchronized animations
 
 ## Why and How Modus is Used
@@ -82,8 +87,9 @@ An innovative platform designed to improve accessibility by translating sports c
 | Transcription Service | Google Cloud Speech-to-Text |
 | Deployment | Docker, Google Cloud Platform (GCP) |
 
-![diagram-export-1-13-2025-3_08_51-AM](https://github.com/user-attachments/assets/96b608e1-a680-4a80-998f-f0ad4fbf3679)
 
+
+![diagram-export-1-13-2025-7_17_06-AM](https://github.com/user-attachments/assets/773a2442-24b4-4955-929b-db0a8d747397)
 
 
 
@@ -166,6 +172,9 @@ Usage:
 ```bash
 ./video_overlay input_video.mp4 subtitle_track.json images output_video.mp4
 ```
+
+[Link to the repo](https://github.com/sarthak7awasthi/Sign-Language-Subtitles)
+
 
 ## Known Issues
 
