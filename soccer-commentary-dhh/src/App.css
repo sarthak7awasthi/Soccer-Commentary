@@ -1,0 +1,135 @@
+/* 1) Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2) Background Container */
+.soccer-bg {
+  background: url("/lesly-juarez-isWEKdSRCrA-unsplash.jpg") no-repeat center
+    center;
+  background-size: cover;
+  min-height: 100vh;
+
+  /* We'll use a column layout for smaller screens, 
+     but here's a default center alignment. */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* You can also consider "flex-direction: column;" 
+     if you want your .upload-container and .video-container 
+     stacked vertically by default. */
+}
+
+/* 3) Main App Container */
+.App {
+  font-family: sans-serif;
+  color: #fff;
+
+  /* We'll let the .soccer-bg do the main centering if needed. */
+  width: 100%;
+  max-width: 1200px; /* for larger screens */
+  margin: 0 auto; /* center horizontally if we go wider than the container */
+  display: flex;
+  flex-direction: column; /* stack content: upload container on top, video below */
+  align-items: center;
+  padding: 2rem;
+}
+
+/* 4) Upload Container Styles */
+.upload-container {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%; /* take full width up to 600px */
+  margin-bottom: 2rem; /* add space below container */
+}
+
+h1 {
+  font-size: 1rem;
+  margin-bottom: 5rem;
+  color: darkgoldenrod;
+  text-shadow: black 2px 2px 2px;
+}
+
+.upload-container p {
+  margin-bottom: 1rem;
+}
+
+input[type="file"] {
+  margin: 1rem 0;
+}
+
+button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* 5) Video Container */
+.video-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  margin: 1rem auto 0 auto;
+}
+
+.video-container h2 {
+  margin-bottom: 1rem;
+}
+
+.responsive-video {
+  width: 100%;
+  height: auto; /* maintain aspect ratio */
+  background-color: #000;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* 6) Animation Container */
+.animation-container {
+  margin-top: 1rem;
+}
+
+/* 7) Error Message */
+.error-message {
+  color: #f00;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* 8) Media Queries for smaller screens */
+/* Example: for screens 768px or smaller */
+@media (max-width: 768px) {
+  .upload-container {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .video-container {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+}
